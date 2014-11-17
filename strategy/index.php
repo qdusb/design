@@ -61,7 +61,6 @@ $equi->display();
 
 $equi=new Printer();
 $equi->display();
-
 <br>
 <?php
 //Client
