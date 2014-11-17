@@ -1,5 +1,17 @@
 Observer<br>
-<textarea style="width:600px;height:600px;resize:none;color:#F33">
+<style type="text/css">
+pre {
+width: 620px;
+margin: 10px 0 0 0;
+padding: 10px;
+border: 0;
+border: 1px dotted #785;
+background: #f5f5f5;
+font-family: "Courier New",monospace;
+font-size: 12px;
+}
+</style>
+<pre>
 class MessageStation{
 private $observers;
 private static $instance;
@@ -72,9 +84,7 @@ $messageStation->setChange(array("msg"=>"I am early"));
 
 $p2->unbook();
 $messageStation->setChange(array("msg"=>"I am early too"));
-?>
-</textarea>
-<br>
+
 <?php
 //Subject
 class MessageStation{
@@ -150,3 +160,5 @@ $messageStation->setChange(array("msg"=>"I am early"));
 $p2->unbook();
 $messageStation->setChange(array("msg"=>"I am early too"));
 ?>
+<pre>
+<br>

@@ -1,5 +1,17 @@
 Strategy Pattern<br>
-<textarea style="width:600px;height:600px;resize:none;color:#F33">
+<style type="text/css">
+	.pre {
+width: 620px;
+margin: 10px 0 0 0;
+padding: 10px;
+border: 0;
+border: 1px dotted #785;
+background: #f5f5f5;
+font-family: "Courier New",monospace;
+font-size: 12px;
+}
+</style>
+<pre class="pre">
 abstract  class Equiment{
 	public $IO;
 	public function display(){
@@ -49,7 +61,7 @@ $equi->display();
 
 $equi=new Printer();
 $equi->display();
-</textarea>
+
 <br>
 <?php
 //Client
@@ -102,3 +114,6 @@ $equi->display();
 
 $equi=new Printer();
 $equi->display();
+
+?>
+</pre>
