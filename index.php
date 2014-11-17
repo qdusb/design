@@ -1,3 +1,4 @@
 Design Pattern
 <br>
-<a href="http://strategy.design" target="_blank">Strategy</a>
+<a href="http://strategy.design" target="_blank">Strategy</a><br>
+<a href="http://observer.design" target="_blank">Observer</a>
