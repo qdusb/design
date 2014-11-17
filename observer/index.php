@@ -89,6 +89,7 @@ $messageStation->setChange(array("msg"=>"I am early too"));
 //Subject
 class MessageStation{
 	private $observers;
+	private $msg;
 	private static $instance;
 	function MessageStation(){
 		$this->observers=array();
@@ -112,10 +113,14 @@ class MessageStation{
 			unset($this->observers[$key]); 
 		}
 	}
-	function setChange($array){
+	function setChange($msg){
 		foreach ($this->observers as $key => $observer) {
-			$observer->update($array);
+			$observer->update($msg);
 		}
+		$this->msg=$msg;
+	}
+	function getMessage(){
+		return $this->msg;
 	}
 }
 
@@ -125,8 +130,11 @@ abstract class Observer{
 	public function __construct(){
 		$this->ms=MessageStation::getInstance();
 	}
-	public function update($array){
+	public function update($msg){
 
+	}
+	public function pullMessage(){
+		return $this->ms->getMessage();
 	}
 	function book(){
 		$this->ms->addObserver($this);
@@ -137,13 +145,13 @@ abstract class Observer{
 }
 class AmericanObserver extends Observer{
 
-	public function update($array){
-		echo "I am American,I speak English ".$array["msg"]."<br>";
+	public function update($msg){
+		echo "I am American,I speak English ".$msg["msg"]."<br>";
 	}
 }
 class ChineseObserver extends Observer{
-	public function update($array){
-		echo "I am Chinese,I speak Chinese ".$array["msg"]."<br>";
+	public function update($msg){
+		echo "I am Chinese,I speak Chinese ".$msg["msg"]."<br>";
 	}
 }
 $messageStation=MessageStation::getInstance();
