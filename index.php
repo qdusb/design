@@ -8,3 +8,4 @@ Design Pattern
 <a href="http://www.design.cn/factory/factory_method.php" target="_blank">Factory Method Pattern</a><br>
 <a href="http://www.design.cn/singleton/index.php" target="_blank">Singleton</a><br>
 <a href="http://www.design.cn/command/index.php" target="_blank">Command Pattern</a><br>
+<a href="http://www.design.cn/adapter/index.php" target="_blank">Adapter Pattern</a><br>
