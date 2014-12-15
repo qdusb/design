@@ -35,6 +35,7 @@ class Bike{
 	public function carry(){
 		echo "carry:bike can carry 1 person<br>";
 	}
+	
 }
 class BikeAdapter implements ICar{
 	public $bike;
@@ -61,8 +62,8 @@ class BikeAdapter implements ICar{
 }
 $bike=new Bike();
 $bikeAdapter=new BikeAdapter($bike);
-$car=new Car();
 
+$car=new Car();
 $car->addSpeed();
 $car->carry();
 $car->autoNavigation();

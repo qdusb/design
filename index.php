@@ -10,3 +10,4 @@ Design Pattern
 <a href="http://www.design.cn/command/index.php" target="_blank">Command Pattern</a><br>
 <a href="http://www.design.cn/adapter/index.php" target="_blank">Adapter Pattern</a><br>
 <a href="http://www.design.cn/template/index.php" target="_blank">Template Method Pattern</a><br>
+<a href="http://www.design.cn/builder/index.php" target="_blank">Builder</a><br>
