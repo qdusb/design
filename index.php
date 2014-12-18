@@ -12,3 +12,5 @@ Design Pattern
 <a href="http://www.design.cn/template/index.php" target="_blank">Template Method Pattern</a><br>
 <a href="http://www.design.cn/builder/index.php" target="_blank">Builder</a><br>
 <a href="http://www.design.cn/data_access/index.php" target="_blank">Data Access</a><br>
+<a href="http://www.design.cn/delegate/index.php" target="_blank">delegate</a><br>
+<a href="http://www.design.cn/facade/index.php" target="_blank">facade</a><br>

@@ -1,3 +1,8 @@
+<html>
+<head>
+<title>Head First Decorator</title>
+</head>
+<body>
 Decorator<br>
 <?php
 abstract class Desk{
@@ -19,7 +24,7 @@ abstract class Desk{
 		$this->size=$size;
 	}
 }
-//被装饰着
+//被装饰
 class SquareDesk extends Desk{
 	public function SquareDesk(){
 		$this->price=200;
@@ -45,7 +50,7 @@ class LongDesk extends Desk{
 		$this->description="LongDesk";
 	}
 }
-//被装饰着
+//被装饰
 class DecorateDesk extends Desk{
 	public $desk;
 	public function DecorateDesk($desk){
@@ -88,3 +93,5 @@ echo "The colorfull adron long desk price $".$adronDesk->cost();
 echo "<br>";
 
 ?>
+</body>
+</html>
