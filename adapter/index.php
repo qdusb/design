@@ -73,5 +73,4 @@ $bikeAdapter->addSpeed();
 $bikeAdapter->carry();
 $bikeAdapter->autoNavigation();
 $bikeAdapter->autoDrive();
-
 ?>
