@@ -1,5 +1,6 @@
 <?php
-class Song{
+//代理模式就是策略模式，Actio
+ class Song{
 	private $title;
 	public function __construct($title){
 		$this->title=$title;
@@ -7,7 +8,7 @@ class Song{
 	public function getTitle(){
 		return $this->title;
 	}
-}
+} 
 interface SongList{
 	public function getList($list);
 }
