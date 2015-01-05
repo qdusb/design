@@ -1,10 +1,15 @@
-Template Method Pattern<br>
+<html>
+<head>
+<title>Template Method Pattern</title>
+</head>
+<body>
 <?php
 abstract class DB{
 	public $name="root";
 	public $pass="";
 	public $host="localhost";
 	public $dbName="TemplateMethod";
+    
 	final function connectDB(){
 		$this->getUserNameAndPass();
 		$this->getDBHost();
@@ -52,3 +57,5 @@ $mysql->connectDB();
 echo "<hr>";
 $mssql->connectDB();
 ?>
+</body>
+</html>

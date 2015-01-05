@@ -1,5 +1,4 @@
 <?php
-
 class Prize{
 	public $name;
 	public $count;
