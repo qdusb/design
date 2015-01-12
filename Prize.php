@@ -74,7 +74,6 @@ class PrizeProcessCeneter{
          	$red=imagecolorallocate($image, rand(1,255), rand(1,255), rand(1,255));
          	imagefilledrectangle($image,$posX,$posY,$sizeX,560,$red);
          	imagestring($image,3,$posX+$deltX,$posY+$sizeY/2,$sizeY,$white);
-         	
          }
         header("Content-type: image/jpeg");  
         //输出结果  
