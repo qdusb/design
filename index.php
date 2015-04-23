@@ -15,6 +15,3 @@ Design Pattern
 <a href="http://www.design.cn/delegate/index.php" target="_blank">delegate</a><br>
 <a href="http://www.design.cn/facade/index.php" target="_blank">facade</a><br>
 <a href="http://www.design.cn/interpreter/index.php" target="_blank">interpreter</a><br>
-<?php
-echo date("Y-m-d 23:59:59");
-?>
